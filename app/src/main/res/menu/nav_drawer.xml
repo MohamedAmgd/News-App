@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/home" android:id="@+id/home_item"/>
+    <item android:title="@string/favorites" android:id="@+id/favorites_item"/>
+    <item android:title="@string/top_headlines">
+        <menu>
+            <item android:title="@string/sports" android:id="@+id/sports_item"/>
+            <item android:title="@string/science" android:id="@+id/science_item"/>
+            <item android:title="@string/technology" android:id="@+id/technology_item"/>
+            <item android:title="@string/health" android:id="@+id/health_item"/>
+            <item android:title="@string/business" android:id="@+id/business_item"/>
+            <item android:title="@string/entertainment" android:id="@+id/entertainment_item"/>
+        </menu>
+    </item>
+    <item android:title="@string/options">
+        <menu>
+            <item android:title="@string/settings" android:id="@+id/settings_item"/>
+            <item android:title="@string/exit" android:id="@+id/exit_item"/>
+        </menu>
+    </item>
+</menu>
