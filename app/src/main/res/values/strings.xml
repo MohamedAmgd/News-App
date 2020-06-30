@@ -39,5 +39,8 @@
     <string name="error_in_loading_title">An unknown Error occurred</string>
     <string name="error_in_loading_description">Try to Refresh</string>
 
+    <!-- toolbar -->
+    <string name="search">Search</string>
+
 
 </resources>
