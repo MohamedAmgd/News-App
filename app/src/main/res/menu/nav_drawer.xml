@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Copyright 2020 Mohamed Amgd
 
@@ -13,7 +14,6 @@ Copyright 2020 Mohamed Amgd
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="@string/home" android:id="@+id/home_item"/>

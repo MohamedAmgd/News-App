@@ -65,6 +65,7 @@ public class NewsViewModel extends AndroidViewModel {
     }
 
     public void onStarClicked(News news) {
+        mNewsDataState.setValue("loading");
         if (news.isStared()) {
             mRepository.removeFromFavorites(news);
             news.setStared(false);
@@ -77,6 +78,7 @@ public class NewsViewModel extends AndroidViewModel {
                     getApplication().getString(R.string.added_to_fav),
                     Toast.LENGTH_SHORT).show();
         }
+        mNewsDataState.setValue("done");
     }
 
     private void getSearchNews(String query) {
