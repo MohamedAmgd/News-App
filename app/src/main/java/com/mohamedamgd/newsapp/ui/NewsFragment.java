@@ -90,6 +90,7 @@ public class NewsFragment extends Fragment {
 
         // Initialize the swipe refresh layout and set its on refresh action
         mPullToRefresh = getActivity().findViewById(R.id.pull_to_refresh);
+        mPullToRefresh.setColorSchemeResources(R.color.colorPrimary);
         mPullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

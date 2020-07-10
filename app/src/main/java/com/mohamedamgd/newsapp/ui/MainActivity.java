@@ -34,7 +34,7 @@ import com.mohamedamgd.newsapp.R;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    static MenuItem mSelectedMenuItem;
+    MenuItem mSelectedMenuItem;
     MenuItem mSearchMenuItem;
     DrawerLayout mDrawerLayout;
     ActionBarDrawerToggle mActionBarDrawerToggle;
@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        mSelectedMenuItem = menuItem;
         if (mSearchMenuItem != null) mSearchMenuItem.setVisible(true);
         switch (menuItem.getItemId()) {
             case R.id.home_item:
